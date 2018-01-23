@@ -22,7 +22,9 @@ abbr        if () {} else {}
     if (${1:#:condition}) 
     {
         ${2:TARGET}
-    } else {
+    } 
+    else 
+    {
         ${3}
     }
 
@@ -44,7 +46,8 @@ snippet     do_while
 alias       do
     do {
         ${0:TARGET:code}
-    } while (${1:#:condition});
+    } 
+    while (${1:#:condition});
 
 snippet     switch
 abbr        switch () {}
@@ -86,11 +89,11 @@ abbr        enum {}
 
 # hard-tab is necessary; C indent doesn't support this.
 snippet main
-	int main(int argc, char const* argv[])
-	{
-		${0:TARGET}
-		return 0;
-	}
+    int main(int argc, char const* argv[])
+    {
+        ${0:TARGET}
+        return 0;
+    }
 
 # #include <...>
 snippet inc
